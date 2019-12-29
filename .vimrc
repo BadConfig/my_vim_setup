@@ -73,8 +73,10 @@ set smarttab
 set shiftwidth=4
 set smartindent
 "подсветки во время набора
-"set incsearch
-"set hlsearch
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
 "nav numbers
 set number
 set relativenumber
@@ -100,7 +102,8 @@ map tj :tabn<CR>
 map tk :tabp<CR>
 map tn :tabnew<CR>
 map tc :tabclose<CR>
-
+"hightlighting search
+map m : nohlsearch<CR>
 "========================NERD=TREE========================="
 map <C-n> :NERDTreeToggle<CR>
 "if file is not opened NERD tree will
